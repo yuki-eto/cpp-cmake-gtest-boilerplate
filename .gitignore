@@ -1,2 +1,3 @@
-/build/*
-!/build/.gitkeep
+/build*
+!build_osx.sh
+!build_windows.sh
