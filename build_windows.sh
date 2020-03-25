@@ -9,6 +9,6 @@ mkdir $BUILD_DIR
 cd $BUILD_DIR
 
 export CROSS_TRIPLE=x86_64-w64-mingw32
-crossbuild cmake ..
+crossbuild cmake -DCMAKE_SYSTEM_NAME=Windows ..
 crossbuild make sample_cpp_lib
 

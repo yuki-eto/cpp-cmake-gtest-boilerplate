@@ -9,7 +9,6 @@ mkdir $BUILD_DIR
 cd $BUILD_DIR
 
 export CROSS_TRIPLE=x86_64-apple-darwin
-crossbuild cmake ..
-sed -i -e "s/soname/install_name/g" src/CMakeFiles/sample_cpp_lib.dir/link.txt
+crossbuild cmake -DCMAKE_SYSTEM_NAME=Darwin ..
 crossbuild make sample_cpp_lib
 
