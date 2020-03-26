@@ -11,8 +11,8 @@ public:
     int Sub();
     int Factorial();
 private:
-    int a = 0;
-    int b = 0;
+    int a;
+    int b;
 };
 
 #endif
