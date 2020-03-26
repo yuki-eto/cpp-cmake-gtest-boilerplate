@@ -9,8 +9,8 @@ download_project(PROJ googletest
 
 add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR})
 
-add_executable(TestLibrary test_library.cpp)
-target_link_libraries(TestLibrary sample_cpp_lib gtest_main)
+add_executable(TestLibrary test_calculator.cpp test_bridge.cpp)
+target_link_libraries(TestLibrary calculator gtest_main)
 include_directories(${PROJECT_SOURCE_DIR}/src)
 
 include(GoogleTest)
